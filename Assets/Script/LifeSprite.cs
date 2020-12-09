@@ -11,26 +11,31 @@ public class LifeSprite : MonoBehaviour
     [SerializeField]
     private int m_Health = 3;
 
-    public void OnTriggerEnter(Collider other)
+    public void UpdateLifeCollision()
     {
-        if(other.gameObject.layer == 11)
-        {
-            Debug.LogError("toucher0");
-        }
+        UpdateLife(-1);
     }
-    public void UpdateLife(int addAmount) //ajoute une valeur a playerHealth
+    private void UpdateLife(int addAmount) //ajoute une valeur a playerHealth
     {
-        Debug.LogError("toucher0");
+        
 
         m_Health += addAmount;
         UpdateLifeUI();
     }
-    public void UpdateLifeUI()
+    private void UpdateLifeUI()
     {
         for (int i = 0; i < m_spriteLife.Length; i++)
         {
             bool isSpriteAcitve = i < m_Health;
             m_spriteLife[i].gameObject.SetActive(!isSpriteAcitve);
+        }
+    }
+
+    public void DeathLife()
+    {
+        if(m_Health <=0)
+        {
+            Debug.LogError("endGame");
         }
     }
 }
