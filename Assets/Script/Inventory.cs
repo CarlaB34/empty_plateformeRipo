@@ -8,12 +8,14 @@ public class Inventory : MonoBehaviour
 
     [SerializeField]
     private int m_CoinCountSugar;
-
-    
-
     [SerializeField]
     private Text m_CoinCountTexSugar;
 
+    [SerializeField]
+    private int m_CoinToys;
+
+    [SerializeField]
+    private Text m_CoinToysText;
 
     [SerializeField]
     private HightScores m_ScoreRef;
@@ -43,5 +45,9 @@ public class Inventory : MonoBehaviour
 
     }
 
-
+    public void AddCointToys(int p_count)
+    {
+        m_CoinToys += p_count;
+        m_CoinToysText.text = m_CoinToys.ToString();
+    }
 }
