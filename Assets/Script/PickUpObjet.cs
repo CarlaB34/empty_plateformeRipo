@@ -15,14 +15,14 @@ public class PickUpObjet : MonoBehaviour
     {
         if(collision.gameObject.layer== 10 && m_SpSars)
         {
-            Inventory.instanceInvantaire.AddCointsDiamant(1);
+            Inventory.instanceInvantaire.AddCointsDiamant(100);
             Debug.Log("piece");
             m_ScoreRef.Save();
         }
         
         if(collision.gameObject.layer== 11 && m_SpToys)
         {
-            Inventory.instanceInvantaire.AddCointsDiamant(1);
+            Inventory.instanceInvantaire.AddCointsDiamant(100);
             Debug.Log("piece");
             m_ScoreRef.Save();
         }

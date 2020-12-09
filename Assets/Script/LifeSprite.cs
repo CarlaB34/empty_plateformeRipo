@@ -11,9 +11,18 @@ public class LifeSprite : MonoBehaviour
     [SerializeField]
     private int m_Health = 3;
 
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == 11)
+        {
+            Debug.LogError("toucher0");
+        }
+    }
     public void UpdateLife(int addAmount) //ajoute une valeur a playerHealth
     {
-       // m_PlayerhealthLV1 += addAmount;
+        Debug.LogError("toucher0");
+
+        m_Health += addAmount;
         UpdateLifeUI();
     }
     public void UpdateLifeUI()
