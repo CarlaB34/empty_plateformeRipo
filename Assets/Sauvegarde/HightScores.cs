@@ -9,7 +9,7 @@ public class HightScores : ScriptableObject
 {
     //public List<PlayerScore> hightScores = new List<PlayerScore>();
     public int score;
-  //  public int HightScore;
+   public int ScoreToys;
     public void Save()
     {
         //varible converti en text, converti le jscon en lui meme

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: StarsScore
   m_EditorClassIdentifier: 
   score: 0
+  ScoreToys: 6700
