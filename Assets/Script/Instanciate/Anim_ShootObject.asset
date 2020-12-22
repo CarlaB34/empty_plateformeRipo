@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b91157279d671654b80a22de640a2874, type: 3}
-  m_Name: BasicLogger
+  m_Script: {fileID: 11500000, guid: abdcdd05edb2f634d8f720cbf3aa9d17, type: 3}
+  m_Name: Anim_ShootObject
   m_EditorClassIdentifier: 
-  m_IsActive: 0
-  m_Prefix: 
-  m_Suffix: 
+  m_Prefab: {fileID: 3892761777897694874, guid: e3208601f70206a4fb9f89eda0f3ae18,
+    type: 3}
+  m_ScoreRef: {fileID: 11400000, guid: cdcefc9732174f441a7de3fdfd4753e4, type: 2}
