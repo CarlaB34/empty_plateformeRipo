@@ -42,15 +42,21 @@ public class Inventory : MonoBehaviour
 
         m_CoinCountSugar += p_Count;
         m_CoinCountTexSugar.text = m_CoinCountSugar.ToString();
-      //  m_CoinCountTexSugar.text =  m_ScoreRef.score.ToString();
 
     }
 
     public void AddCointToys(int p_count)
     {
         m_CoinToys += p_count;
-     //   m_CoinToys += m_ScoreRef.score;
         m_CoinToysText.text = m_CoinToys.ToString();
-      //  m_CoinToysText.text = m_ScoreRef.ScoreToys.ToString();
+    }
+
+    public void ResetCoints()
+    {
+        m_CoinCountTexSugar.text = m_CoinCountSugar.ToString("0");
+        m_ScoreRef.score = 0;
+        m_ScoreRef.ScoreToys = 0;
+        m_CoinToysText.text = "0";
+        m_ScoreRef.Save();
     }
 }
